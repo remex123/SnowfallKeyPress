@@ -482,7 +482,7 @@ local function S(L,p,f,d,a)local e;
                 -- A(e);
                 -- end);
                 if( select(2,UnitClass("player")) == "DRUID" ) then
-                	e:SetAttribute("macrotext", "/click [stance:1/3] BonusActionButton"..t..";".."ActionButton"..t)
+                	e:SetAttribute("macrotext", "/click [stance:1/3], [stance:1/2] BonusActionButton"..t..";".."ActionButton"..t)
                 else
 					e:SetAttribute("macrotext", "/click [nostance] ActionButton"..t..";".."BonusActionButton"..t)
 				end
